@@ -1,0 +1,13 @@
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.exe
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.deps.json
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.runtimeconfig.json
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.runtimeconfig.dev.json
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.dll
+C:\devbuild4\UsedCarLot\bin\Debug\netcoreapp3.1\UsedCarLot.pdb
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.csprojAssemblyReference.cache
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.AssemblyInfoInputs.cache
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.AssemblyInfo.cs
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.csproj.CoreCompileInputs.cache
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.dll
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.pdb
+C:\devbuild4\UsedCarLot\obj\Debug\netcoreapp3.1\UsedCarLot.genruntimeconfig.cache
