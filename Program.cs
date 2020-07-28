@@ -69,12 +69,12 @@ namespace UsedCarLot
     {
         static void Main(string[] args)
         {
-            CarLot.CarsInLot.Add(new UsedCar("Fordsuc", "Focus", 2014, 28000, 8764));
-            CarLot.CarsInLot.Add(new UsedCar("Ford", "Taurus", 2015, 28000, 64546));
-            CarLot.CarsInLot.Add(new UsedCar("Ford", "Fiesta", 2016, 28000, 9875656));
-            CarLot.CarsInLot.Add(new Car("Ford", "Bronco", 2017, 28000));
-            CarLot.CarsInLot.Add(new Car("Ford", "Fusion", 2018, 28000));
-            CarLot.CarsInLot.Add(new Car("Ford", "F150", 2019, 28000));
+            CarLot.CarsInLot.Add(new UsedCar("Ford", "Focus", 2014, 278900, 8764));
+            CarLot.CarsInLot.Add(new UsedCar("Chevy", "Camaro", 2015, 78970, 64546));
+            CarLot.CarsInLot.Add(new UsedCar("Honda", "Civic", 2016, 53450, 9875656));
+            CarLot.CarsInLot.Add(new Car("Toyota", "Supra", 2017, 26765));
+            CarLot.CarsInLot.Add(new Car("Chrysler", "300", 2018, 7700));
+            CarLot.CarsInLot.Add(new Car("Dodge", "Ram", 2019, 500));
             bool continueFlag = true;
             Console.WriteLine("Welcome to the Car Lot!\n");
             //Console.WriteLine(CarLot.CarsInLot.Count);
