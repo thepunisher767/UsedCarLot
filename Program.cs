@@ -26,7 +26,7 @@ namespace UsedCarLot
         public double Price { get; set; }
         public override string ToString()
         {
-            return String.Format("{0,-14} {1,-10} {2,-5} {3,-8}", $"{Make}", $"{Model}", $"{Year}", $"{Price}");
+            return String.Format("{0,-14} {1,-10} {2,-5} {3,-11}", $"{Make}", $"{Model}", $"{Year}", $"{Price.ToString("C2")}");
         }
     }
     
@@ -40,7 +40,7 @@ namespace UsedCarLot
         }
         public override string ToString()
         {
-            return base.ToString() + $"(USED) {Mileage}";
+            return base.ToString() + $" (USED) {Mileage}";
         }
     }
 
@@ -95,7 +95,15 @@ namespace UsedCarLot
                 }
                 if (userInput == CarLot.CarsInLot.Count + 1)
                 {
-                    Console.Write("\nPlease enter a Make: ");
+                    Console.WriteLine();
+                    Console.Write("Is this a new or used car?: ");
+                    string usedOrNew = Console.ReadLine();
+                    while (usedOrNew.ToLower() != "new" && usedOrNew.ToLower() != "used")
+                    {
+                        Console.Write("Please enter \"new\" or \"used\": ");
+                        usedOrNew = Console.ReadLine();
+                    }
+                    Console.Write("Please enter a Make: ");
                     string make = Console.ReadLine();
                     Console.Write("Please enter a Model: ");
                     string model = Console.ReadLine();
@@ -109,14 +117,29 @@ namespace UsedCarLot
                     }
                     Console.Write("Please enter a valid price: ");
                     string price = Console.ReadLine();
-                    Console.WriteLine();
                     double validPrice;
                     while (!double.TryParse(price, out validPrice))
                     {
                         Console.Write($"Please a valid price: ");
                         price = Console.ReadLine();
                     }
-                    CarLot.CarsInLot.Add(new Car(make, model, validYear, validPrice));
+                    if (usedOrNew == "new")
+                    {
+                        CarLot.CarsInLot.Add(new Car(make, model, validYear, validPrice));
+                    }
+                    else if (usedOrNew == "used")
+                    {
+                        Console.Write("Please enter the mileage: ");
+                        string mileage = Console.ReadLine();
+                        int validMileage;
+                        while (!int.TryParse(mileage, out validMileage))
+                        {
+                            Console.Write($"Please a valid mileage: ");
+                            mileage = Console.ReadLine();
+                        }
+                        CarLot.CarsInLot.Add(new UsedCar(make, model, validYear, validPrice, validMileage));
+                    }
+                    Console.WriteLine();
                 }
                 else
                 {
